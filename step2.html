@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Step 2</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: lightgray;
+            padding: 10px;
+            height: 300px;
+
+            /* Try different values for justify-content */
+            /* justify-content: flex-start;     /* Default: items start from the left */
+            /* justify-content: flex-end;       /* Items move to the right */
+            /* justify-content: center;         /* Items move to the center */
+            /* justify-content: space-between;  /* Items spread out, first & last touch edges */
+            /* justify-content: space-around;   /* Space around each item */
+             justify-content: space-evenly;  /* Equal space between all items */
+        }
+        .box {
+            width: 50px;
+            height: 50px;
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+
+</body>
+</html>

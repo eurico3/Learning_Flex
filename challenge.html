@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* NAVBAR CONTAINER */
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Space between logo, menu, and button */
+            align-items: center; /* Center items vertically */
+            background-color: #333;
+            padding: 15px 30px;
+            color: white;
+        }
+
+        /* LOGO */
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* MENU */
+        .menu {
+            display: flex;
+            gap: 20px; /* Spacing between items */
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* SIGN UP BUTTON */
+        .signup {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyLogo</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <button class="signup">Sign Up</button>
+    </nav>
+
+</body>
+</html>

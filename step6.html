@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Step 6</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: lightgray;
+            padding: 10px;
+            height: 300px;
+            /**************************************************************************************************/
+            /* Try different values for justify-content */
+
+            /* justify-content: flex-start;     /* Default: items start from the left */
+            /* justify-content: flex-end;       /* Items move to the right */
+            /* justify-content: center;         /* Items move to the center */
+            /* justify-content: space-between;  /* Items spread out, first & last touch edges */
+            /* justify-content: space-around;   /* Space around each item */
+            justify-content: space-evenly;   /* Equal space between all items */
+            
+            /**************************************************************************************************/    
+            /* Try different align-items values */
+
+            /* align-items: flex-start;          /* Items align at the top */
+            /* align-items: flex-end;            /* Items align at the bottom */
+            align-items: center;               /* Items align in the middle */
+            /* align-items: stretch;             /* Items stretch to fill the container */
+            /* align-items: baseline;            /* Items align based on their text baseline */
+            
+            /**************************************************************************************************/
+            /* Try different flex-direction values */
+
+            flex-direction: row;                /* Default: items in a row (left to right) */
+            /* flex-direction: row-reverse;       /* Items in a row, but right to left */
+            /* flex-direction: column;            /* Items stack in a vertical column */
+            /* flex-direction: column-reverse;    /* Items in a column, bottom to top */
+            
+            /**************************************************************************************************/
+            /* Try different flex-wrap values */
+            
+            /*flex-wrap: nowrap;                 /* Default: items stay in one line (even if they shrink) */
+            flex-wrap: wrap;                   /* Items break to the next row when needed */
+            /*flex-wrap: wrap-reverse;           /* Items wrap but in reverse order */
+            
+            /**************************************************************************************************/
+            /* Use flex-flow shorthand */
+            
+            /* flex-flow: column wrap;            /* Items stack in a column & wrap if needed */
+            /* flex-flow: row wrap;               /* Items go in a row & wrap to the next line */
+            /* flex-flow: row nowrap;             /* (Default) Items stay in one row */
+            
+            /**************************************************************************************************/
+            /* Try different align-content values */
+            /* To use when we have more than 1 roe in a container
+            
+            /* align-content: flex-start;            /* Rows align at the top */
+            /* align-content: flex-end;           /* Rows align at the bottom */
+             /*align-content: center;             /* Rows are centered */
+            /* align-content: space-between;      /* Even space between rows */
+             align-content: space-around;       /* Equal space around rows */
+            /* align-content: space-evenly;       /* Completely even spacing */
+
+
+            
+        }
+        .box {
+            
+            width: 500px;
+            height: 50px;
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" style="font-size: 16px;">A</div>
+        <div class="box" style="font-size: 32px;">B</div>
+        <div class="box" style="font-size: 24px;">C</div>
+        <div class="box" style="font-size: 16px;">D</div>
+        <div class="box" style="font-size: 32px;">E</div>
+        <div class="box" style="font-size: 24px;">F</div>
+    </div>
+
+</body>
+</html>

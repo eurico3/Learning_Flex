@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Step 3</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: lightgray;
+            padding: 10px;
+            height: 200px;
+
+            /* Try different values for justify-content */
+            /* justify-content: flex-start;     /* Default: items start from the left */
+            /* justify-content: flex-end;       /* Items move to the right */
+            /* justify-content: center;         /* Items move to the center */
+            /* justify-content: space-between;  /* Items spread out, first & last touch edges */
+            /* justify-content: space-around;   /* Space around each item */
+            justify-content: space-evenly;   /* Equal space between all items */
+
+            /* Try different align-items values */
+            /* align-items: flex-start;   /* Items align at the top */
+            /* align-items: flex-end;     /* Items align at the bottom */
+             align-items: center;       /* Items align in the middle */
+            /* align-items: stretch;      /* Items stretch to fill the container */
+            /* align-items: baseline;     /* Items align based on their text baseline */
+        }
+        .box {
+            width: 250px;
+            height: 50px;
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" style="font-size: 16px;">1</div>
+        <div class="box" style="font-size: 32px;">2</div>
+        <div class="box" style="font-size: 24px;">3</div>
+    </div>
+
+</body>
+</html>

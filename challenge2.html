@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* 📌 MAIN CONTAINER */
+        .dashboard {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* 📌 SIDEBAR */
+        .sidebar {
+            width: 250px; /* Fixed width */
+            background-color: #2C3E50;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* 📌 MAIN CONTENT */
+        .main-content {
+            flex: 1; /* Takes all available space */
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 📌 HEADER */
+        .header {
+            background-color: #34495E;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header button {
+            background-color: #E74C3C;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        /* 📌 CONTENT GRID */
+        .content {
+            flex: 1; /* Takes remaining space */
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            align-content: flex-start;
+        }
+
+        .card {
+            flex: 1 1 300px; /* Flexible: grows, shrinks, starts at 300px */
+            background-color: #ECF0F1;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        /* 📌 RESPONSIVE DESIGN */
+        @media (max-width: 800px) {
+            .dashboard {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                height: auto;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <h1>Welcome Back!</h1>
+                <button>Log Out</button>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="content">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+                <div class="card">Card 4</div>
+                <div class="card">Card 5</div>
+                <div class="card">Card 6</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
